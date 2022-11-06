@@ -1,0 +1,19 @@
+{
+  "friends-details": [
+    {
+      "fname": "Dhana",
+      "lname": "raj",
+      "school/College": "amrita",
+      "PhoneNumber": "09080317448",
+      "dob": "2001-12-21",
+      "gender": "male",
+      "Status": "Single",
+      "Profession": "Single",
+      "region": "Kanyakumari",
+      "City": "Nagercoil",
+      "About Me": "smart",
+      "rating": "Single",
+      "id": 1
+    }
+  ]
+}

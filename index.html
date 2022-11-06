@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/c4338603d0.js" crossorigin="anonymous"></script>
+    <style>
+        button{
+            margin-left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <hr>
+        <div class="panel panel-primary">
+            <div class="panel-heading">Friends details</div>
+            <div class="panel-body">
+                <form method="post" action="http://localhost:7600/friends-details">
+                    <div class="row  ">
+                            <div class="form-group has-success col-md-6">
+                                <label class="control-label">FirstName</label>
+                                <input class="form-control" name="fname" required placeholder="Firstname" />
+                            </div>
+
+                            <div class="form-group has-success col-md-6">
+                                <label class="control-label">LastName</label>
+                                <input class="form-control" name="lname" required placeholder="Lastname" />
+                            </div> 
+                            
+                            <div class="form-group has-success col-md-12">
+                                <label class="control-label">School/College</label>
+                                <input class="form-control" name="school/College" required placeholder="school/College" />
+                            </div>
+
+                            <div class="form-group has-success col-md-6">
+                                <label>phone Number</label>
+                                <input class="form-control" type="number" name="PhoneNumber" >
+                            </div>
+
+                            <div class="form-group has-success col-md-6">
+                                <label>DOB</label>
+                                <input class="form-control" type="date" name="dob">
+                            </div>
+
+                            <div class="col-md-4 ">
+                                <label>Gender</label>
+                                <div class="radio">
+                                    <label> <input type="radio" name="gender" value="female" />Female </label>
+                                    <label> <input type="radio" name="gender" value="male" />Male </label>
+                                  </div>
+                            </div>
+
+                            <div class="col-md-4 ">
+                                <label>Status</label>
+                                <div class="radio">
+                                    <label> <input type="radio" name="Status" value="Single" />Single </label>
+                                    <label> <input type="radio" name="Status" value="Commited" />Commited</label>
+                                  </div>
+                            </div>
+
+                            <div class="col-md-4 ">
+                                <label>Profession</label>
+                                <div class="radio">
+                                    <label> <input type="radio" name="Profession" value="Single" />student</label>
+                                    <label> <input type="radio" name="Profession" value="working" />working</label>
+                                    <label> <input type="radio" name="Profession" value="Entrepreneur" />Entrepreneur</label>
+                                    <label> <input type="radio" name="Profession" value="vip" />vip</label>
+                                  </div>
+                            </div>
+                            
+
+                            <div class="form-group has-success col-md-3">
+                                <label>Location</label>
+                                <div class="dropdown">
+                                    <select class="form-group" name="region">
+                                        <option>Kanyakumari</option>
+                                        <option>Chennai</option>
+                                        <option>Madurai</option>
+                                        <option>Thirunelveli</option>
+                                        <option>Others</option>
+                                      </select>
+                                </div>
+                              </div>
+
+                              <div class="form-group has-success col-md-6">
+                                <label class="control-label">City</label>
+                                <input class="form-control" name="City" required placeholder="city" />
+                            </div>
+
+                            <div class="col-md-12 ">
+                                <label>Describe Me:   </label>
+                            
+                                    <label> <input type="checkbox" name="About Me" value="fun" />  fun </label>
+                                    <label> <input type="checkbox" name="About Me" value="smart" />  smart </label>
+                                    <label> <input type="checkbox" name="About Me" value="crazy" />  crazy </label>
+                                    <label> <input type="checkbox" name="About Me" value="stupid" />  stupid </label>
+                                    <label> <input type="checkbox" name="About Me" value="silly" />  silly </label>
+                                    <label> <input type="checkbox" name="About Me" value="annoying" />   annoying </label>
+                                  
+                            </div>
+                            <div class="col-md-12 ">
+                                <label>Rate this Form</label>
+                                
+                                    <label> <input type="radio" name="rating" value="Single" /><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i></label>
+                                    <label> <input type="radio" name="rating" value="working" /><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i></label>
+                                    <label> <input type="radio" name="rating" value="Entrepreneur"/><i class="fa-solid fa-star "><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i></i></label>
+                                    <label> <input type="radio" name="rating" value="vip" /><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i></label>
+                                    <label> <input type="radio" name="rating" value="vip" /><i class="fa-solid fa-star "></i></label>
+                                
+                            </div>
+
+                    </div>
+                    <button class="btn btn-success  ">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
